@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #0056b3;
+    padding: 15px 25px;
+}
+
+.topo h1 {
+    margin: 0;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.topo nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.topo nav a:hover {
+    text-decoration: underline;
+}
+
+.conteudo {
+    padding: 15px 25px;
+}
+
+.conteudo h2 {
+    font-size: 18px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.formulario label {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.formulario input,
+.formulario select {
+    margin-top: 5px;
+    padding: 6px;
+    font-family: "Segoe UI", sans-serif;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+
+.formulario .botao {
+    margin-top: 15px;
+    align-self: flex-start;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #0056b3;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 14px;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.botao:hover {
+    opacity: 0.85;
+}
+
+.quadro {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.coluna h3 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+}
+
+.card {
+    border: 1px solid #000000;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    font-size: 13px;
+}
+
+.card p {
+    margin: 4px 0;
+}
+
+.acoes {
+    display: flex;
+    gap: 8px;
+    margin: 8px 0;
+}
+
+.vazio {
+    font-size: 13px;
+}
+
+@media (max-width: 800px) {
+    .quadro {
+        grid-template-columns: 1fr;
+    }
+}

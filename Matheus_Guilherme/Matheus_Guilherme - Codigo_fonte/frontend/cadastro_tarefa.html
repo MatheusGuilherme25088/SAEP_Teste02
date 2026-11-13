@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Tarefas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Menu principal -->
+    <header class="topo">
+        <h1>Gerenciamento de Tarefas</h1>
+        <nav>
+            <a href="cadastro_usuario.html">Cadastro de Usuários</a>
+            <a href="cadastro_tarefa.html">Cadastro de Tarefas</a>
+            <a href="index.html">Gerenciar Tarefas</a>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <h2 id="titulo">Cadastro de Tarefas</h2>
+
+        <form id="form-tarefa" class="formulario">
+            <label for="descricao">Descrição:</label>
+            <input type="text" id="descricao" name="descricao" maxlength="255" required>
+
+            <label for="setor">Setor:</label>
+            <input type="text" id="setor" name="setor" maxlength="100" required>
+
+            <label for="id_usuario">Usuário:</label>
+            <select id="id_usuario" name="id_usuario" required>
+                <option value="">Selecione</option>
+            </select>
+
+            <label for="prioridade">Prioridade:</label>
+            <select id="prioridade" name="prioridade" required>
+                <option value="baixa">Baixa</option>
+                <option value="media">Média</option>
+                <option value="alta">Alta</option>
+            </select>
+
+            <button type="submit" class="botao">Cadastrar</button>
+        </form>
+    </main>
+
+    <script src="js/cadastro_tarefa.js"></script>
+</body>
+</html>

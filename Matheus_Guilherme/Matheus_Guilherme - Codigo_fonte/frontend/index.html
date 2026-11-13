@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Tarefas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Menu principal -->
+    <header class="topo">
+        <h1>Gerenciamento de Tarefas</h1>
+        <nav>
+            <a href="cadastro_usuario.html">Cadastro de Usuários</a>
+            <a href="cadastro_tarefa.html">Cadastro de Tarefas</a>
+            <a href="index.html">Gerenciar Tarefas</a>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <h2>Tarefas</h2>
+
+        <!-- Quadro com uma coluna para cada status -->
+        <div class="quadro">
+            <section class="coluna">
+                <h3>A Fazer</h3>
+                <div id="coluna-a-fazer"></div>
+            </section>
+
+            <section class="coluna">
+                <h3>Fazendo</h3>
+                <div id="coluna-fazendo"></div>
+            </section>
+
+            <section class="coluna">
+                <h3>Pronto</h3>
+                <div id="coluna-pronto"></div>
+            </section>
+        </div>
+    </main>
+
+    <script src="js/gerenciamento.js"></script>
+</body>
+</html>
